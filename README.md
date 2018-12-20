@@ -15,3 +15,10 @@ Include in your code and begin using the library:<br/>
 ```pawn
 #include <DemoRecorder>
 ```
+# Testing<br/>
+<br/>
+To test, simply run the package:<br/>
+
+```bash
+sampctl package run
+```
