@@ -39,7 +39,7 @@ public OnPlayerConnect(playerid)
 	GetPlayerName(playerid, RD_PName, sizeof(RD_PName));
 
 	new RD_FootString[MAX_PLAYER_NAME +20];
-	format(RD_FootString, sizeof(RD_FootString), "DEMO_%s_FOOT", RD_PName);
+	format(RD_FootString, sizeof(RD_FootString), "DEMO_%s_FOOT", tolower(RD_PName));
 	StartRecordingPlayerData(playerid, PLAYER_RECORDING_TYPE_ONFOOT, RD_FootString);
 	#if defined RDemo_OnPlayerConnect
 		return RDemo_OnPlayerConnect(playerid);
@@ -57,13 +57,13 @@ public OnPlayerStateChange(playerid, newstate, oldstate)
 	if(oldstate == PLAYER_STATE_ONFOOT && (newstate == PLAYER_STATE_DRIVER || newstate == PLAYER_STATE_PASSENGER) )
 	{
 		StopRecordingPlayerData(playerid);
-		format(RD_TempString, sizeof(RD_TempString), "DEMO_%s_VEHICLE", RD_PName);
+		format(RD_TempString, sizeof(RD_TempString), "DEMO_%s_VEHICLE", tolower(RD_PName));
 		StartRecordingPlayerData(playerid, PLAYER_RECORDING_TYPE_DRIVER, RD_TempString);
 	}
 	else if(newstate == PLAYER_STATE_ONFOOT && (oldstate == PLAYER_STATE_DRIVER || oldstate == PLAYER_STATE_PASSENGER) )
 	{
 		StopRecordingPlayerData(playerid);
-		format(RD_TempString, sizeof(RD_TempString), "DEMO_%s_FOOT", RD_PName);
+		format(RD_TempString, sizeof(RD_TempString), "DEMO_%s_FOOT", tolower(RD_PName));
 		StartRecordingPlayerData(playerid, PLAYER_RECORDING_TYPE_ONFOOT, RD_TempString);
 	}
 	#if defined RDemo_OnPlayerStateChange
