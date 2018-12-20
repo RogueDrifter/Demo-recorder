@@ -2,9 +2,6 @@
 
 An include that records demos of players.  
 
-`Installation`:  
-You simply include it in the gamemode, reset is automated.  
-
 # Installation<br/>
 <br/>
 Simply install to your project:<br/>
