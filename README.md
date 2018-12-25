@@ -1,5 +1,5 @@
 # Demo-recorder
-
+[![sampctl](https://shields.southcla.ws/badge/sampctl-Demo--Recorder-2f2f2f.svg?style=for-the-badge)](https://github.com/y/Demo-Recorder)
 An include that records demos of players.  
 
 # Installation<br/>
