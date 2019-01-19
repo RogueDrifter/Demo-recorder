@@ -34,4 +34,5 @@ FAQ:
 
 3- So how does it work? Once someone connects a file is set under their name on foot, that changes every time they get in/out of a car and it gets overwritten, so every player can only have 2 files, one inside of a car and one on-foot.  
 
-4- How do i play it? If you've ever used NPCs you'll know how to get it done, just spectate the NPC once you play the recorded file if you wanna check for anything.```
+4- How do i play it? If you've ever used NPCs you'll know how to get it done, just spectate the NPC once you play the recorded file if you wanna check for anything.
+```
